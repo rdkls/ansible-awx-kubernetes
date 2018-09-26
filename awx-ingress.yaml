@@ -3,10 +3,10 @@ kind: Ingress
 metadata:
   name: awx
   annotations:
-    kubernetes.io/ingress.class: "nginx"
+    kubernetes.io/ingress.class: "traefik"
 spec:
   rules:
-  - host: tower.mydomain.com
+  - host: awx.shuttle.local
     http:
       paths:
       - path: /
